@@ -1,0 +1,17 @@
+{% extends "forth_task/menu.html" %}
+
+{% block pagename %}
+    <header>
+        <h1>Игры</h1>
+    </header>
+{% endblock %}
+
+{% block menu %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+{% for i in games %}
+    <p>{{i}}</p>
+{% endfor %}
+{% endblock %}
